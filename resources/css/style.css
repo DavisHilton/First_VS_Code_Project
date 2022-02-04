@@ -1,0 +1,35 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+background-color:gray;
+}
+
+header{
+text-align: center;
+}
+
+nav{
+background-color: rgb(127, 146, 255);
+height:50px;
+}
+
+ .container-nav{
+display:flex;
+justify-content: flex-end;
+
+}
+
+.nav-item, a{
+list-style: none;
+color: white;
+margin:20px 50px ;
+text-decoration: none;
+}
+
+.item-index{
+
+}
+.item-about{
+
+}
