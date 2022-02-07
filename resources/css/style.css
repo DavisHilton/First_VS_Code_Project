@@ -52,7 +52,8 @@ a:hover{
 /* ===================================== */
 #main {
   background-color: rgb(127, 146, 255);
-  width:100%;
+  width: 100vw;
+  min-height: 100vh;
   position: relative;
   top: 30px;
   display: grid;
