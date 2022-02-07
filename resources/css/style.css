@@ -1,35 +1,135 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
-background-color:gray;
 }
 
-header{
-text-align: center;
+html,
+body {
+  height: 100%
 }
 
-nav{
-background-color: rgb(127, 146, 255);
-height:50px;
-}
-
- .container-nav{
-display:flex;
-justify-content: flex-end;
+#container {
+  min-height: 100%;
 
 }
 
-.nav-item, a{
-list-style: none;
-color: white;
-margin:20px 50px ;
-text-decoration: none;
+#header {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: goldenrod;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: 10em;
+
 }
 
-.item-index{
+.top-nav {
+  background-color: rgb(3, 14, 80);
+  height: 50px;
+
 
 }
-.item-about{
 
+.container-nav {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.nav-item,
+a {
+  list-style: none;
+  color: white;
+  margin: 20px 50px;
+  text-decoration: none;
+}
+a:hover{
+  background-color:gray;
+}
+
+/* ===================================== */
+#main {
+  background-color: rgb(127, 146, 255);
+  width:100%;
+  position: relative;
+  top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: 
+  "title title title"
+  "sec1 sec1 sec1"
+  "sec2 sec2 sec2";
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  font-weight: 500;
+  line-height: 1.2;
+  }
+
+.h1{
+  color:yellow;
+  grid-area: title;
+  margin:5rem;
+  font-size: 2rem;
+ 
+}
+
+.german-shepard {
+  grid-area: sec1;
+
+}
+
+.bullmastiff {
+  grid-area: sec2;
+}
+img{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+p{
+width: 50%;
+text-align: justify;
+margin:50px 400px;
+}
+
+.dog-type{
+color:rgb(35, 35, 94);;
+text-align: justify;
+}
+
+.h1 {
+  text-align: center;
+  
+}
+
+.h2-german, .h2-bullmastiff {
+  margin:2rem;
+  font-size: 2rem;
+  padding: 5px; 
+  height:auto;
+  color:white;
+  text-align: center;
+}
+
+/* ================================== */
+#footer {
+  background-color: rgb(127, 146, 255);
+  color: white;
+
+
+  position: relative;
+  height: 10%;
+  margin-top: -20px;
+  clear: both;
+  
+}
+footer p{
+  text-align:center ;
 }
