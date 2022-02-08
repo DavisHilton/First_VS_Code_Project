@@ -1,5 +1,10 @@
 {
   "cSpell.words": [
     "Bullmastiff"
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#05227D",
+    "titleBar.activeBackground": "#072FB0",
+    "titleBar.activeForeground": "#F8FAFF"
+  }
 }
